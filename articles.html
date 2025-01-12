@@ -1,0 +1,146 @@
+<!--roadmap.sh Basic HTML Website project-->
+<!--Articles-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/1favicon-32x32.png">
+    <style>
+     :root 
+        {
+            --normal-font: 400;
+            --bold-font: 700;
+            --bolder-font: 850;
+            --bg-color: #000000;
+            --primary-color: #E42278;
+            --secondary-color: #ED7BAB;
+            --primary-shadow: #8b8eaf;
+            --secondary-shadow: #FFFFFF;
+            --bottom-margin: 0.5rem;
+            --bottom-margin-2: 1rem;
+            --line-height: 1.5rem;
+            --transtion: 0.4s;
+        }
+
+        nav 
+        {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 3.5rem;
+            background-color: var(--bg-color);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul 
+        {
+            list-style-type: none;
+        }
+
+        a 
+        {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        a:hover 
+        {
+            color: var(--secondary-color);
+        }
+
+        nav a 
+        {
+            color: var(--primary-color);
+            float: right;
+            padding: 10px;
+            margin: auto;
+        }
+
+        nav a:hover 
+        {
+            color: var(--secondary-color);
+        }
+
+        nav ul 
+        {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li 
+        {
+            font-weight: var(--bold-font);
+        } 
+
+        h1 
+        {
+            text-align: center;
+        }
+
+        p 
+        {
+            text-align: center;
+            color: #808080;
+        }
+
+        body
+        {
+            color:white;
+            background-color: black;
+        }
+
+        footer
+        {
+            clear:both;
+            margin-bottom: 0;
+            margin-top: 5%;
+            display: inline-block;
+            margin-left: 3%;
+        }
+        
+        .logo 
+        {
+            font-size: 2rem;
+            font-weight: bold;
+            font-style: normal;
+            float: right;
+            color: var(--secondary-color);
+        }    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            jn
+        </span>
+        <ul class="topnav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="articles.html" class="nav-link">Articles</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Articles</h1>
+</body>
+
+</html>

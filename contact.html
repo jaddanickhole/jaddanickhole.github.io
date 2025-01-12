@@ -1,0 +1,214 @@
+<!--roadmap.sh Basic HTML Website project-->
+<!--Contact-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/1favicon-32x32.png">
+    <style>
+        :root 
+        {
+            --normal-font: 400;
+            --bold-font: 700;
+            --bolder-font: 850;
+            --bg-color: #000000;
+            --primary-color: #E42278;
+            --secondary-color: #ED7BAB;
+            --primary-shadow: #8b8eaf;
+            --secondary-shadow: #FFFFFF; 
+            --bottom-margin: 0.5rem; 
+            --bottom-margin-2: 1rem;
+            --line-height: 1.5rem;
+            --transtion: 0.4s;
+        }
+
+        nav 
+        {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 3.5rem;
+            background-color: var(--bg-color);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul 
+        {
+            list-style-type: none;
+        }
+
+        a 
+        {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        a:hover 
+        {
+            color: var(--secondary-color);
+        }
+
+        nav a 
+        {
+            color: var(--primary-color);
+            float: right;
+            padding: 10px;
+            margin: auto;
+        }
+
+        nav a:hover 
+        {
+            color: var(--secondary-color);
+        }
+
+        nav ul 
+        {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li 
+        {
+            font-weight: var(--bold-font);
+        }
+
+        .logo 
+        {
+            font-size: 2rem;
+            font-weight: bold;
+            font-style: normal;
+            float: right;
+            color: var(--secondary-color);
+        }
+
+        body
+        {
+            background-color: #000000;
+        }
+
+        form
+        {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contactSection
+        {
+            text-align: center;
+            color: white;
+        }
+
+        input[type=submit]
+        {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover
+        {
+            background-color: var(--primary-color);
+        }
+
+        input[type=text], select, textarea
+        {
+            padding: 12px;
+            border: 1px solid var(--primary-shadow);
+            border-radius: 6px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 18px;
+            resize: vertical;
+        }
+
+        label
+        {
+            color:white;
+        }
+
+        .contact-form-area
+        {
+            max-width: 50rem;
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px var(--secondary-shadow);
+        }
+
+        .contact-form-area textarea
+        {
+            font-size: 16px;
+
+        }
+        
+        .contact
+        {
+            margin-top: 2rem;
+        }
+
+        .contact h2
+        {
+            text-align: center;
+            margin-bottom: var(--bottom-margin-2);
+        }
+
+        .userInput
+        {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            jn
+        </span>
+        <ul class="topnav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="articles.html" class="nav-link">Articles</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+<h2 class="contactSection">Contact Me</h2>
+<section class="contact" id="contact">
+    <div class="contact-form-area">
+        <div class="contact-form">
+            <form id="contact-form">
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Your first name..." class="userInput"><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname"placeholder="Your last name..." class="userInput"><br>
+                <label for="message">Message</label><br>
+                <textarea rows="10" name="message" placeholder="write something" id="message" class="userInput"></textarea><br>
+                <input type="submit" value="submit" class="userInput">
+            </form>
+        </div>
+    </div>
+</section>
+</html>
